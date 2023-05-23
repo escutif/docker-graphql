@@ -28,10 +28,11 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t fbnesc/docker-graphql:0.0.2 .
-    
+        docker build -t fbnesc/docker-graphql:latest .
+            
     - name: Push Docker Image
       run: |
         docker push fbnesc/docker-graphql:0.0.2   
-    
+        docker push fbnesc/docker-graphql:latest   
         
 
